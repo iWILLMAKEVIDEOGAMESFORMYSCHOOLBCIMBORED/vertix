@@ -20,10 +20,15 @@ app.use(cors({ origin: true }));
 app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
 
-app.use(rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 200
-}));
+const limiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 1000,
+  standardHeaders: true,
+  legacyHeaders: false
+})
+
+app.use('/scramjet', limiter)
+app.use('/proxy', limiter)
 
 app.use(express.static('public'));
 
