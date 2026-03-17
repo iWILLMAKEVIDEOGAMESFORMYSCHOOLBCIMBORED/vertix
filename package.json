@@ -1,0 +1,16 @@
+{
+  "name": "user-proxy-integration",
+  "version": "1.0.0",
+  "description": "Express-based proxy server integrated with user's UI (original code).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "express-rate-limit": "^6.7.0",
+    "http-proxy": "^1.18.1"
+  },
+  "license": "MIT"
+}
