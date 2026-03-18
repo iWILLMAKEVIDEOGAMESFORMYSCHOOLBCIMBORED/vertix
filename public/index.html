@@ -1873,7 +1873,7 @@ function _toggleZoneFav(id){
 }
 
 function openZoneItem(z){
-  if(z.name&&z.name.includes('SUGGEST')){window.open('https://discord.com/invite/dKs2sUNUXd','_blank');return;}
+  if(z.name&&z.name.includes('SUGGEST')){window.open('https://discord.gg/mRAzhvjBw8','_blank');return;}
   if(z.url&&z.url.startsWith('http')&&!z.url.includes('{HTML_URL}')){window.open(z.url,'_blank');return;}
   var url=_resolveZoneUrl(z);
   var viewer=document.getElementById('zone-viewer');
