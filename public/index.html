@@ -37,14 +37,8 @@ body{font-family:Outfit,system-ui,sans-serif;background:var(--bg);color:var(--w)
 
 /* EXPOSING PAGE */
 .exp-card{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;border:1px solid var(--rim);background:var(--tg2);cursor:pointer;transition:all .2s;position:relative;overflow:hidden;}
-.exp-card::after{content:'';position:absolute;inset:0;background:var(--t);opacity:0;transition:opacity .3s;pointer-events:none;}
-.exp-card:hover{border-color:var(--t2);background:var(--tg);transform:translateY(-2px);box-shadow:0 8px 24px rgba(82,223,192,.1);}
-.exp-card:active::after{opacity:.08;}
-.exp-card-icon{width:40px;height:40px;border-radius:12px;background:var(--tg);border:1px solid var(--rim2);display:flex;align-items:center;justify-content:center;color:var(--t);flex-shrink:0;}
-.exp-card-title{font-size:.88rem;font-weight:700;color:var(--w);margin-bottom:3px;}
-.exp-card-desc{font-size:.72rem;color:var(--mu);}
-.exp-card-arrow{color:var(--fa);flex-shrink:0;}
-@keyframes expPulse{0%{transform:scale(1)}30%{transform:scale(.97)}60%{transform:scale(1.02)}100%{transform:scale(1)}}
+
+@keyframes expPulse{0%{transform:scale(1)}30%{transform:scale(.97)}60%{transform:scale(1.02)}0%{transform:scale(1)}}
 
 @keyframes smoothSlide{
 0%{transform:translateY(0px) rotate(-1deg)}
@@ -809,7 +803,7 @@ var _sqjReady=false;
       <div class="home-logo-glow"></div>
       <div class="home-logo">VERTIX UB</div>
     </div>
-<p class="home-tagline" style="font-size:19px;display:inline-block;animation:smoothSlide 3s ease-in-out infinite;"><script>document.write(["holy shit bro my aura is so tuff","why is peter actually stinky bro..","i love my private island","read exposes :sob:","bailey is the number one ranked gooner","guys elliot is so tuff right??"][Math.floor(Math.random()*6)])</script></p>
+<p class="home-tagline" style="font-size:19px;display:inline-block;animation:smoothSlide 3s ease-in-out infinite;"><script>document.write(["holy shit bro my aura is so tuff","why is peter actually stinky bro..","i love my private island","i got in trouble for exposes :sob:","bailey is the number one ranked gooner","guys elliot is so tuff right??"][Math.floor(Math.random()*6)])</script></p>
     <div class="home-search-row">
       <div class="home-search-box">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -951,7 +945,7 @@ var _sqjReady=false;
   </div>
 </div>
 </div></div>
-<div id="view-exposing" class="view">
+<div id="" class="view">
   <div style="padding:28px 24px 0;position:sticky;top:0;z-index:10;background:var(--bg);">
     <div class="eyebrow" style="margin-bottom:10px"><div class="eyebrow-dot"></div>Exposed :3</div>
     <h1 style="font-size:2rem;font-weight:900;margin-bottom:6px">Exposing shi</h1>
@@ -1197,7 +1191,6 @@ var _sqjReady=false;
   <button class="bn" data-view="mc" onclick="nav('mc',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg><span class="bn-label">Minecraft</span></button>
   <button class="bn" data-view="proxy" onclick="nav('proxy',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg><span class="bn-label">Proxy</span></button>
   <button class="bn" data-view="links" onclick="nav('links',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg><span class="bn-label">Links</span></button>
-  <button class="bn" data-view="exposing" onclick="nav('exposing',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg><span class="bn-label">Exposing</span></button>
   <button class="bn" data-view="chat" onclick="nav('chat',this);setTimeout(chatCheckLogin,180)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span class="bn-label">Chat</span></button>
 <button class="bn" data-view="ai" onclick="nav('ai',this);if(!_aiInited){_aiInited=true;aiInit();}">
 <span style="font-size:20px;">⚠︎</span>
